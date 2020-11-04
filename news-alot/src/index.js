@@ -7,7 +7,7 @@ import {rootReducer} from './store/reducers'
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
