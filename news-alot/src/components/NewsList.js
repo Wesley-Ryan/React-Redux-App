@@ -16,11 +16,12 @@ const NewsList = (props) => {
 
 
     return (
-        <div>
+        <div className='app-container'>
              {props.isLoading && <Loading /> } 
-             {props.articlesData.articles.map((article) => { 
-                return <NewsCard article={article} />
+             {props.articlesData.map((article, index) => { 
+                return <NewsCard article={article} key={index}  />
              })}
+             
            
         </div>
       );

@@ -14,7 +14,7 @@ export const getArticles = () => {
         axios
         .get(BASE_URL)
         .then((response) => { 
-            dispatch({type: FETCH_NEWS_SUCCESS, payload: response.data})
+            dispatch({type: FETCH_NEWS_SUCCESS, payload: response.data.articles})
         })
         .catch((error) => { 
             console.log("There was an error retrieving the data", error)
